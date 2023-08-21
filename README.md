@@ -26,6 +26,29 @@
 
 4. Configuração do serviço de Load Balancer AWS para a aplicação Wordpress
 
+##
+
+# Passo a Passo
+## Passo 1: Criando a VPC:
+
+## Passo 2: Criando os Security Groups:
+
+## Passo 3: Criando o EFS:
+
+## Passo 4: Criando o RDS:
+
+## Passo 4: Criando o Template:
+
+## Passo 5: Criando o Target group:
+
+## Passo 6: Criando o Load balancer:
+
+## Passo 7: Criando o  Auto Scaling:
+
+
+
+
+
 
 <div align="center">
   <img src="" width="180px">
