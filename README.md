@@ -2,7 +2,6 @@
 <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Imagens/blob/main/Atividade_AWS_Docker/compass-uol-logo.png" width="180px">
 </div>
 
-##
 # Atividade AWS - Docker - IF Fluminense
 
 <div align="center">
