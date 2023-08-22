@@ -29,8 +29,42 @@
 
 # Passo a Passo
 ## Passo 1: Criando a VPC:
+* Na AWS busque por `VPC`
+* No menu de VPC clique em `Criar VPC`.
+* Slecione a opção `and more`.
+* Após criar a VPC ainda no menu vá até `Gateways NAT`.
+* Clique em `Criar gateway NAT`.
+* Nomeie o Nat Gateway e em `Sub-rede` selecione uma das sub-redes públicas.
+* Mantenha `Tipo de conectividade` como público.
+* Em seguida clique em `Criar gateway NAT`.
+* Após criar o NAT gateway, acesse `Tabelas de rotas`.
+* Na `Tabela de rotas` selecione as rotas privadas, clique em `Ações` e selecione `Editar rotas`, será necessário realizar isso para as duas rotas.
+* Em `Editar rotas` em `destino` selecione `0.0.0/0`
+* Em Alvo selecione `Gateway NAT` e selecione o NAT gateway criado anteriormente.
+* Clique em `Salvar alterações`.
+* Para verificar se sua VPC está correta acesse `Suas VPCs` em seguida selecione a VPC criada anteriormente e a opção `Resource map`
 
 ## Passo 2: Criando os Security Groups:
+#### SG-ALB
+  | Type         | Protocol | Port Range | Source Type | Source      |
+  |--------------|----------|------------|-------------|-------------|
+  | HTTP         | TCP      | 80         | Anywhere    | 0.0.0.0/0   |
+
+#### SG-EC2
+  | Type         | Protocol | Port Range | Source Type | Source      |
+  |--------------|----------|------------|-------------|-------------|
+  | SSH          | TCP      | 22         | Anywhere    | 0.0.0.0/0   |
+  | HTTP         | TCP      | 80         | Custom      | SG-ALB      |
+
+#### SG-EFS
+  | Type         | Protocol | Port Range | Source Type | Source      |
+  |--------------|----------|------------|-------------|-------------|
+  | NFS          | TCP      | 2049       | Anywhere    | 0.0.0.0/0   |
+
+#### SG-RDS
+  | Type         | Protocol | Port Range | Source Type | Source      |
+  |--------------|----------|------------|-------------|-------------|
+  | MYSQL/Aurora | TCP      | 3306       | Anywhere    | 0.0.0.0/0   |
 
 ## Passo 3: Criando o EFS:
 
