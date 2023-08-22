@@ -71,6 +71,10 @@
 ## Passo 4: Criando o RDS:
 
 ## Passo 4: Criando o Template:
+* Na AWS busque por `EC2`
+* No menu de EC2 clique em `Launch Template`.
+* Configure o template da seguinte forma:
+* No quadro do User data copie e cole o [StartScript.sh](https://github.com/RaphaelAntunesMarinhoDeSouza/Atividade_AWS-Docker-IF_Fluminense/blob/main/StartScript.sh).
 
 ## Passo 5: Criando o Target group:
 
