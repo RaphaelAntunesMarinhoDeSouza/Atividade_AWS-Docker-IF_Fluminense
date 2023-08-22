@@ -74,19 +74,45 @@
 * Na AWS busque por `EC2`
 * No menu de EC2 clique em `Launch Template`.
 * Configure o template da seguinte forma:
+  
+<div align="center">
+  <img src="" width="180px">
+</div>
+
 * No quadro do User data copie e cole o [StartScript.sh](https://github.com/RaphaelAntunesMarinhoDeSouza/Atividade_AWS-Docker-IF_Fluminense/blob/main/StartScript.sh).
 
 ## Passo 5: Criando o Target group:
+* No menu EC2 procure por `Grupos de destino` na barra de navegação à esquerda.
+* Acesse e clique em `Criar grupo de destino`.
+* Em `Escolha um tipo de destino` clique em `Instâncias`.
+* Nomeie o grupo de destino.
+*  Em `Protocolo` mantenha `HTTP` e em `Porta` mantenha a porta `80`.
+*  Como `VPC` selecione a VPC criada anteriormente.
+*  Mantenha a `Versão do protocolo` como `HTTP1`.
+*  A seguir clique em `Próximo`.
+*  Na página de `Registrar destinos` não selecione nenhuma instância.
+*  Selecione `Criar grupo de destino`.
 
 ## Passo 6: Criando o Load balancer:
 
 ## Passo 7: Criando o  Auto Scaling:
 
-
-
-
-
-
+# Testando o funcionamento
+Para isso basta copiar o endereço DNS do load balancer e cola-lo no browser, após fazer isso deverá aparecer a página do wordpress exibida a baixo:
 <div align="center">
   <img src="" width="180px">
 </div>
+
+Volte a console AWS e no menu EC2 busque por `target group` Aqui ambas as instâncias precisam estar healthy. Neste ponto cabe ressaltar que pode ser que levem alguns minutos para que fiquem healthy.
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/Healthy.png" width="1200px">
+</div>
+
+Acesse a instância via PuTTy e dê os seguintes comandos:
+* `` docker exec -it <ID_DO_CONTAINER_WORDPRESS> /bin/bash `` 
+* Dentro do container WordPress execute: ``apt-get update`` e depois `` apt-get install default-mysql-client -y ``.
+*  Agora use o comando: `` mysql -h <ENDPOINT_DO_SEU_RDS> -P 3306 -u admin -p `` para entrar no banco de dados MySQL com as mesmas credenciais do seu RDS.
+
+
+
+
