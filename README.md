@@ -188,6 +188,11 @@
 ## Passo 5: Criando o Target group:
 * No menu EC2 procure por `Grupos de destino` na barra de navegação à esquerda.
 * Acesse e clique em `Criar grupo de destino`.
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/TG.png" width="500px">
+</div>
+  
 * Em `Escolha um tipo de destino` clique em `Instâncias`.
 * Nomeie o grupo de destino.
 *  Em `Protocolo` mantenha `HTTP` e em `Porta` mantenha a porta `80`.
@@ -196,15 +201,55 @@
 *  A seguir clique em `Próximo`.
 *  Na página de `Registrar destinos` não selecione nenhuma instância.
 *  Selecione `Criar grupo de destino`.
-
+  
 ## Passo 6: Criando o Load balancer:
+
+* No menu EC2 procure por `load Balancer` na barra de navegação à esquerda.
+* Acesse e clique em `Criar load balancer`.
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/LB1.png" width="500px">
+</div>
+  
+* Selecione `Criar` Application Load Balancer.
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/LB2.png" width="500px">
+</div>
+  
+* Nomeie o load balancer.
+* Em `Esquema` selecione `Voltado para a internet`.
+* Em `Tipo de endereço IP` mantenha `IPv4`.
+* Na aba `Mapeamento de rede` selecione a rede VPC.
+* Selecione as duas subnets públicas criadas anteriormente.
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/LB3.png" width="500px">
+</div>
+
+  
+* Como `Grupo de segurança` selecione o **SG-ALB**.
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/LB4.png" width="500px">
+</div>
+  
+* Em `Listeners e roteamento` mantenha `HTTP`:`80` e selecione o grupo de destino criado anteriormente.
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/LB5.png" width="500px">
+</div>
+  
+* Clique em `Criar load Balancer`.
+
 
 ## Passo 7: Criando o  Auto Scaling:
 
 # Testando o funcionamento
 Para isso basta copiar o endereço DNS do load balancer e cola-lo no browser, após fazer isso deverá aparecer a página do wordpress exibida a baixo:
+
 <div align="center">
-  <img src="" width="180px">
+  <img src="" width="500px">
 </div>
 
 Volte a console AWS e no menu EC2 busque por `target group` Aqui ambas as instâncias precisam estar healthy. Neste ponto cabe ressaltar que pode ser que levem alguns minutos para que fiquem healthy.
