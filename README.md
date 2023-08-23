@@ -31,7 +31,7 @@
 ## Passo 1: Criando a VPC:
 * Na AWS busque por `VPC`
 * No menu de VPC clique em `Criar VPC`.
-* Slecione a opção `and more`.
+* Slecione a opção `and more` e clique em Criar VPC`.
 * Após criar a VPC ainda no menu vá até `Gateways NAT`.
 * Clique em `Criar gateway NAT`.
 * Nomeie o Nat Gateway e em `Sub-rede` selecione uma das sub-redes públicas.
