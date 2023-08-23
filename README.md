@@ -102,19 +102,67 @@
   <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/EFS1.png" width="220px">
 </div>
 
-* Clique em `Costumize`
+* Clique em `Costumize`.
 
 <div align="center">
   <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/EFS2.png" width=400px">
 </div>
+
+* Selecione o **SG** criado para o EFS e finalize a crição.
 
 <div align="center">
   <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/EFS3.png" width="1200px">
 </div>
 
 ## Passo 4: Criando o RDS:
+* Busque por RDS na Amazon AWS.
+* Na página de RDS clique em `Criar banco de dados`.
 
-## Passo 4: Criando o Template:
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS1.png" width="500px">
+</div>
+
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS2.png" width="500px">
+</div>
+
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS3.png" width="500px">
+</div>
+
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS4.png" width="500px">
+</div>
+
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS5.png" width="500px">
+</div>
+
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS6.png" width="500px">
+</div>
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS7.png" width="500px">
+</div>
+
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS8.png" width="500px">
+</div>
+
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS9.png" width="500px">
+</div>
+
+
+## Passo 5: Criando o Template:
 * Na AWS busque por `EC2`
 * No menu de EC2 clique em `Launch Template`.
 * Configure o template da seguinte forma:
