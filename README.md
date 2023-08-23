@@ -29,12 +29,32 @@
 
 # Passo a Passo
 ## Passo 1: Criando a VPC:
-* Na AWS busque por `VPC`
+* Na AWS busque por `VPC`.
+  
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/VPC1.png" width="600px">
+</div>
+  
 * No menu de VPC clique em `Criar VPC`.
+  
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/VPC2.png" width="650px">
+</div>
+  
 * Slecione a opção `and more` e clique em Criar VPC`.
 * Após criar a VPC ainda no menu vá até `Gateways NAT`.
 * Clique em `Criar gateway NAT`.
+ 
+ <div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/VPC3.png" width="1100px">
+</div> 
+
 * Nomeie o Nat Gateway e em `Sub-rede` selecione uma das sub-redes públicas.
+  
+ <div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/VPC4.png" width="600px">
+</div> 
+  
 * Mantenha `Tipo de conectividade` como público.
 * Em seguida clique em `Criar gateway NAT`.
 * Após criar o NAT gateway, acesse `Tabelas de rotas`.
@@ -43,8 +63,15 @@
 * Em Alvo selecione `Gateway NAT` e selecione o NAT gateway criado anteriormente.
 * Clique em `Salvar alterações`.
 * Para verificar se sua VPC está correta acesse `Suas VPCs` em seguida selecione a VPC criada anteriormente e a opção `Resource map`
+  
+  <div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/VPC5.png" width="700px">
+</div>
 
 ## Passo 2: Criando os Security Groups:
+* No menu EC2 procure por `Security groups` na barra de navegação à esquerda.
+* Acesse e clique em `Criar novo grupo de segurança`, e crie os grupos de segurança a seguir.
+
 #### SG-ALB
   | Type         | Protocol | Port Range | Source Type | Source      |
   |--------------|----------|------------|-------------|-------------|
@@ -67,6 +94,23 @@
   | MYSQL/Aurora | TCP      | 3306       | Anywhere    | 0.0.0.0/0   |
 
 ## Passo 3: Criando o EFS:
+
+* Busque por `EFS` na Amazon AWS o serviço de arquivos de NFS escalável da AWS.
+* Na Página de EFS clique em `Criar sistema de arquivos`.
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/EFS1.png" width="220px">
+</div>
+
+* Clique em `Costumize`
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/EFS2.png" width=400px">
+</div>
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/EFS3.png" width="1200px">
+</div>
 
 ## Passo 4: Criando o RDS:
 
