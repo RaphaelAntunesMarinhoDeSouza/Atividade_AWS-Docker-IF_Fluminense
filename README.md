@@ -178,13 +178,12 @@
 ## Passo 5: Criando o Template:
 * Na AWS busque por `EC2`
 * No menu de EC2 clique em `Launch Template`.
-* Configure o template da seguinte forma:
+* Configure o template com forme solicitado.
+* No campo `advanced details` vá até o quadro do User data copie e cole o [StartScript.sh](https://github.com/RaphaelAntunesMarinhoDeSouza/Atividade_AWS-Docker-IF_Fluminense/blob/main/StartScript.sh).
   
 <div align="center">
-  <img src="" width="180px">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/TEMPLATE.png" width="500px">
 </div>
-
-* No quadro do User data copie e cole o [StartScript.sh](https://github.com/RaphaelAntunesMarinhoDeSouza/Atividade_AWS-Docker-IF_Fluminense/blob/main/StartScript.sh).
 
 ## Passo 5: Criando o Target group:
 * No menu EC2 procure por `Grupos de destino` na barra de navegação à esquerda.
