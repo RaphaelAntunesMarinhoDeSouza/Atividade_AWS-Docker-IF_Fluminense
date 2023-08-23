@@ -208,13 +208,13 @@
 * Acesse e clique em `Criar load balancer`.
 
 <div align="center">
-  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/LB1.png" width="500px">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/LB1.png" width="700px">
 </div>
   
 * Selecione `Criar` Application Load Balancer.
 
 <div align="center">
-  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/LB2.png" width="500px">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/LB2.png" width="700px">
 </div>
   
 * Nomeie o load balancer.
@@ -224,26 +224,52 @@
 * Selecione as duas subnets públicas criadas anteriormente.
 
 <div align="center">
-  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/LB3.png" width="500px">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/LB3.png" width="700px">
 </div>
 
   
 * Como `Grupo de segurança` selecione o **SG-ALB**.
 
 <div align="center">
-  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/LB4.png" width="500px">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/LB4.png" width="700px">
 </div>
   
 * Em `Listeners e roteamento` mantenha `HTTP`:`80` e selecione o grupo de destino criado anteriormente.
 
 <div align="center">
-  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/LB5.png" width="500px">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/LB5.png" width="700px">
 </div>
   
 * Clique em `Criar load Balancer`.
 
 
 ## Passo 7: Criando o  Auto Scaling:
+
+* No menu EC2 procure por `Auto Scaling` na barra de navegação à esquerda.
+* Acesse e clique em `Criar grupo do Auto Scaling`.
+* Nomeio o grupo de Auto Scaling.
+* Selecione o modelo de execução criado anteriormente.
+* A seguir clique em `Próximo`.
+* Selecione a VPC criada anteriormente.
+* Selecione as Sub-redes Privadas.
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/ASG1.png" width="700px">
+</div>
+  
+* A seguir clique em `Próximo`.
+* Marque a opção `Anexar a um balanceador de carga existente`.
+* Marque a opção `Escolha entre seus grupos de destino de balanceador de carga`.
+* Selecione o grupo de destino criado anteriormente.
+* A seguir clique em `Próximo`.
+* Em `Tamanho do grupo` selecione:
+    - Capacidade desejada: 2
+    - Capacidade mínima: 2
+    - Capacidade máxima: 3
+* A seguir clique em `Pular para a revisão`.
+* Clique em `Criar grupo de auto Scaling`.
+
+
 
 # Testando o funcionamento
 Para isso basta copiar o endereço DNS do load balancer e cola-lo no browser, após fazer isso deverá aparecer a página do wordpress exibida a baixo:
