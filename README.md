@@ -283,11 +283,35 @@ Volte a console AWS e no menu EC2 busque por `target group` Aqui ambas as instâ
   <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/Healthy.png" width="1200px">
 </div>
 
-Acesse a instância via PuTTy e dê os seguintes comandos:
+Acesse a instância e dê os seguintes comandos:
+* `` docker ps``
+* `` docker-compose ls ``
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/testedocker1.png" width="900px">
+</div>
+
+* `` df -h ``
+  
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/testedocker2.png" width="850px">
+</div>
+
+* `` cd /etc ``
+* `` cat fstab ``
+
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/testedocker3.png" width="850px">
+</div>
+  
 * `` docker exec -it <ID_DO_CONTAINER_WORDPRESS> /bin/bash `` 
 * Dentro do container WordPress execute: ``apt-get update`` e depois `` apt-get install default-mysql-client -y ``.
 *  Agora use o comando: `` mysql -h <ENDPOINT_DO_SEU_RDS> -P 3306 -u admin -p `` para entrar no banco de dados MySQL com as mesmas credenciais do seu RDS.
-
+*  show databases;
+  
+<div align="center">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/testedocker4.png" width="850px">
+</div>
 
 
 
