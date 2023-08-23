@@ -275,7 +275,7 @@
 Para isso basta copiar o endereço DNS do load balancer e cola-lo no browser, após fazer isso deverá aparecer a página do wordpress exibida a baixo:
 
 <div align="center">
-  <img src="https://github.com/zSalocin/WordPress_With_Docker_AWS/blob/main/README_PT-BR.md" width=1200px">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/wodpress1.png" width=1200px">
 </div>
 
 Volte a console AWS e no menu EC2 busque por `target group` Aqui ambas as instâncias precisam estar healthy. Neste ponto cabe ressaltar que pode ser que levem alguns minutos para que fiquem healthy.
