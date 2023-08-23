@@ -116,12 +116,14 @@
 
 ## Passo 4: Criando o RDS:
 * Busque por RDS na Amazon AWS.
-* Na página de RDS clique em `Criar banco de dados`.
+* Na página de RDS clique em `Create database`.
 
 <div align="center">
   <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS1.png" width="500px">
 </div>
 
+* Em `Engine options` selecione **MySQL**
+* Em `Templates` selecione **Free tier**
 
 <div align="center">
   <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS2.png" width="500px">
