@@ -123,44 +123,55 @@
 </div>
 
 * Em `Engine options` selecione **MySQL**
-* Em `Templates` selecione **Free tier**
 
 <div align="center">
   <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS2.png" width="500px">
 </div>
 
-
+* Em `Templates` selecione **Free tier**
+  
 <div align="center">
   <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS3.png" width="500px">
 </div>
 
+* Em `Settings` dê um nome identicador para o **DB**.
+* Escolha um `username`.
+* Escolha uma `senha`.
 
 <div align="center">
   <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS4.png" width="500px">
 </div>
 
+* Em `Storage` determine o tamanho do armazenamento do **DB**.
 
 <div align="center">
   <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS5.png" width="500px">
 </div>
 
+* Selecione a VPC criada.
+* Habilite o acesso público.
+* Selecione o **SG-RDS**.
 
 <div align="center">
   <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS6.png" width="500px">
 </div>
 
+* Dê um nome inicial ao **DB**
+
 <div align="center">
-  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS7.png" width="500px">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS7.png" width="450px">
 </div>
 
+* Com o RDS criado, clique no nome do **DB**
 
 <div align="center">
-  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS8.png" width="500px">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS8.png" width="800px">
 </div>
 
+* Aqui se encontra o `Endpoint`do RDS
 
 <div align="center">
-  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS9.png" width="500px">
+  <img src="https://github.com/RaphaelAntunesMarinhoDeSouza/Images/blob/main/Atividade_AWS_Docker/RDS9.png" width="900px">
 </div>
 
 
